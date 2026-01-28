@@ -37,7 +37,7 @@ const About = () => {
                             <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-purple-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform duration-500 opacity-30 blur-lg"></div>
                             <Image
                                 src={assets.profile1}
-                                alt="Profile"
+                                alt="Zenith Shah (Jenish Shah) - Professional Headshot" // SEO: Descriptive alt text
                                 width={320}
                                 height={320}
                                 className="relative z-10 rounded-2xl shadow-2xl transform transition-transform duration-500 group-hover:scale-105 border border-white/10"

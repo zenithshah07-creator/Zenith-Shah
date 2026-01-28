@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://zenith-shah.vercel.app"),
   title: {
-    default: "Zenith Shah (Jenish Shah) | Frontend Developer",
+    default: "Zenith Shah | Full Stack Developer & MERN Stack Specialist",
     template: "%s | Zenith Shah (Jenish Shah)",
   },
-  description: "Zenith Shah (legally Jenish Shah) is a Frontend Developer specializing in high-performance React & Next.js web experiences.",
-  keywords: ["Zenith Shah", "Jenish Shah", "Frontend Developer", "React Developer", "Next.js Developer", "Web Developer", "Software Engineer", "Portfolio"],
+  description: "Zenith Shah (Jenish Shah) is a Full Stack Developer and MERN Stack specialist. Building scalable, high-performance web applications with React, Next.js, Node.js, and MongoDB.",
+  keywords: ["Zenith Shah", "Jenish Shah", "Full Stack Developer", "MERN Stack Developer", "React Developer", "Next.js", "Node.js", "Web Performance", "Software Engineer"], // SEO: High-value keywords
   authors: [{ name: "Zenith Shah" }, { name: "Jenish Shah" }],
   creator: "Zenith Shah",
   openGraph: {

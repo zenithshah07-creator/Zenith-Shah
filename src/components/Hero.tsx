@@ -76,7 +76,7 @@ const Hero = () => {
                         >
                             <Image
                                 src={assets.profileImg}
-                                alt="Jenish Shah"
+                                alt="Zenith Shah - Full Stack Developer Profile" // SEO: Contextual alt text
                                 className='object-cover rounded-full border-4 border-slate-900 shadow-2xl'
                                 fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

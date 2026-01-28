@@ -27,7 +27,7 @@ const ProjectCard = ({ title, description, metrics, ahaMoment, technicalDifficul
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-transparent to-transparent z-10 opacity-60"></div>
                 <Image
                     src={image}
-                    alt={title}
+                    alt={`${title} - Project User Interface Preview`} // SEO: Descriptive alt text for accessibility
                     fill
                     className="object-cover transform transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
