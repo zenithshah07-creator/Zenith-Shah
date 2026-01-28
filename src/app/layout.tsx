@@ -58,6 +58,9 @@ export const metadata: Metadata = {
   },
 };
 
+import AnalyticsProvider from "@/components/AnalyticsProvider";
+import { Suspense } from "react";
+
 export default function RootLayout({
   children,
 }: Readonly<{
