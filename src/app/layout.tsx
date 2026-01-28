@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jenish-shah.vercel.app"),
+  metadataBase: new URL("https://zenith-shah.vercel.app"),
   title: {
     default: "Zenith Shah (Jenish Shah) | Frontend Developer",
     template: "%s | Zenith Shah (Jenish Shah)",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Zenith Shah (Jenish Shah) | Frontend Developer",
     description: "Building high-performance, accessible web experiences. Check out my portfolio.",
-    url: "https://jenish-shah.vercel.app",
+    url: "https://zenith-shah.vercel.app",
     siteName: "Zenith Shah Portfolio",
     locale: "en_US",
     type: "website",
@@ -58,9 +58,6 @@ export const metadata: Metadata = {
   },
 };
 
-import AnalyticsProvider from "@/components/AnalyticsProvider";
-import { Suspense } from "react";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -79,7 +76,7 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Zenith Shah",
               "alternateName": "Jenish Shah",
-              "url": "https://jenish-shah.vercel.app",
+              "url": "https://zenith-shah.vercel.app",
               "jobTitle": "Frontend Developer",
               "sameAs": [
                 "https://www.linkedin.com/in/jenish-shah-8a4863382/",

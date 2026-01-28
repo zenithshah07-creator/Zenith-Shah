@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://jenish-shah.vercel.app/sitemap.xml',
+        sitemap: 'https://zenith-shah.vercel.app/sitemap.xml',
     }
 }
