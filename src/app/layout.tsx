@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   keywords: ["Zenith Shah", "Jenish Shah", "Full Stack Developer", "MERN Stack Developer", "React Developer", "Next.js", "Node.js", "Web Performance", "Software Engineer"], // SEO: High-value keywords
   authors: [{ name: "Zenith Shah" }, { name: "Jenish Shah" }],
   creator: "Zenith Shah",
+  icons: {
+    icon: "/Icon.png",
+    apple: "/Icon.png",
+  },
   openGraph: {
     title: "Zenith Shah (Jenish Shah) | Frontend Developer",
     description: "Building high-performance, accessible web experiences. Check out my portfolio.",
