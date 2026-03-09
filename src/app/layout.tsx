@@ -60,6 +60,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "1CiAi83FPqWjDK_w0zIbkYDATmY3pEovzFw-ia6E93s",
+  },
 };
 
 import AnalyticsProvider from "@/components/AnalyticsProvider";
