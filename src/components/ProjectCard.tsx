@@ -4,6 +4,8 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { trackEvent } from "@/utils/analytics";
 import Image from "next/image";
+import Link from 'next/link';
+import { slugify } from "@/utils/slugify";
 
 interface ProjectProps {
     title: string;
@@ -42,9 +44,11 @@ const ProjectCard = ({ title, description, metrics, ahaMoment, technicalDifficul
 
             {/* Content */}
             <div className="relative p-6 z-20 flex-1 flex flex-col">
-                <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:text-sky-400 transition-colors">
-                    {title}
-                </h3>
+                <Link href={`/projects/${slugify(title)}`} className="block">
+                    <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:text-sky-400 transition-colors">
+                        {title}
+                    </h3>
+                </Link>
 
                 <p className="text-gray-400 mb-6 text-sm leading-relaxed">
                     {description}
@@ -90,25 +94,33 @@ const ProjectCard = ({ title, description, metrics, ahaMoment, technicalDifficul
                 </div>
 
                 {/* Buttons */}
-                <div className="flex gap-3 mt-auto">
-                    <a
-                        href={demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => trackEvent('Project', 'View Demo', title)}
-                        className="flex-1 text-center bg-sky-600/90 text-white rounded-lg px-4 py-2.5 text-sm font-bold hover:bg-sky-500 hover:shadow-lg hover:shadow-sky-500/30 transition-all duration-300"
+                <div className="flex flex-col gap-3 mt-auto">
+                    <div className="flex gap-3">
+                        <a
+                            href={demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => trackEvent('Project', 'View Demo', title)}
+                            className="flex-1 text-center bg-sky-600/90 text-white rounded-lg px-4 py-2.5 text-sm font-bold hover:bg-sky-500 hover:shadow-lg hover:shadow-sky-500/30 transition-all duration-300"
+                        >
+                            Live Demo
+                        </a>
+                        <a
+                            href={code}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => trackEvent('Project', 'View Code', title)}
+                            className="flex-1 text-center px-4 py-2.5 text-sm font-bold border border-white/10 text-gray-400 rounded-lg hover:border-white hover:text-white hover:bg-white/5 transition-all duration-300"
+                        >
+                            Code
+                        </a>
+                    </div>
+                    <Link
+                        href={`/projects/${slugify(title)}`}
+                        className="w-full text-center px-4 py-2.5 text-xs font-bold bg-white/5 text-sky-400 rounded-lg border border-sky-500/20 hover:bg-sky-500/10 transition-all duration-300"
                     >
-                        Live Demo
-                    </a>
-                    <a
-                        href={code}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => trackEvent('Project', 'View Code', title)}
-                        className="flex-1 text-center px-4 py-2.5 text-sm font-bold border border-white/10 text-gray-400 rounded-lg hover:border-white hover:text-white hover:bg-white/5 transition-all duration-300"
-                    >
-                        Code
-                    </a>
+                        View Case Study
+                    </Link>
                 </div>
             </div>
         </div>

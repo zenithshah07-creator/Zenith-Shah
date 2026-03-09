@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { projects } from '@/assets/assets';
 import { FaArrowRight } from 'react-icons/fa';
 import ProjectCard from './ProjectCard';
+import Link from 'next/link';
 
 const Projects = () => {
     return (
@@ -30,10 +31,10 @@ const Projects = () => {
                     }
                 </div>
                 <div className='text-center mt-12'>
-                    <a href="#" className='inline-flex items-center px-6 py-3 border border-sky-600 rounded-lg font-medium hover:bg-sky-400 transition text-sky-300 hover:text-white'>
+                    <Link href="/projects" className='inline-flex items-center px-6 py-3 border border-sky-600 rounded-lg font-medium hover:bg-sky-400 transition text-sky-300 hover:text-white'>
                         View All Projects
                         <FaArrowRight className='ml-2' />
-                    </a>
+                    </Link>
                 </div>
             </div>
 

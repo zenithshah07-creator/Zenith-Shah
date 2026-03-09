@@ -19,12 +19,12 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#Skills' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Experience', href: '#Experience' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Home', href: '/#home' },
+        { name: 'About', href: '/#about' },
+        { name: 'Skills', href: '/#Skills' },
+        { name: 'Projects', href: '/#projects' },
+        { name: 'Experience', href: '/#Experience' },
+        { name: 'Contact', href: '/#contact' },
     ];
 
     return (
@@ -41,14 +41,14 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <div className='hidden md:flex space-x-8'>
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.name}
                             href={link.href}
                             className='relative text-gray-300 hover:text-sky-400 transition duration-300 text-sm font-medium tracking-wide group py-1'
                         >
                             {link.name}
                             <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-purple-500 transition-all duration-300 group-hover:w-full'></span>
-                        </a>
+                        </Link>
                     ))}
                     <div className='flex items-center gap-4 border-l border-white/10 pl-6 ml-2'>
                         <a
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <div className={`fixed inset-0 bg-slate-900/95 backdrop-blur-xl flex flex-col justify-center items-center space-y-8 transition-all duration-300 md:hidden ${showMenu ? 'pointer-events-auto opacity-100 visible' : 'pointer-events-none opacity-0 invisible'
                     }`}>
                     {navLinks.map((link, index) => (
-                        <a
+                        <Link
                             key={link.name}
                             href={link.href}
                             onClick={() => setShowMenu(false)}
@@ -87,7 +87,7 @@ const Navbar = () => {
                             style={{ transitionDelay: `${index * 50}ms` }}
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
                     <a
                         href="#contact"
