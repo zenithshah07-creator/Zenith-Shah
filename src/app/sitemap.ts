@@ -6,15 +6,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: baseUrl,
             lastModified: new Date(),
-            changeFrequency: 'monthly',
+            changeFrequency: 'weekly',
             priority: 1,
         },
-        {
-            url: `${baseUrl}/about`, // Assuming we might have separate pages, or anchors. For SPA style, mainly root.
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        // Add more routes if we split them
     ]
 }
