@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 import { projects } from '@/assets/assets'
 import { slugify } from '@/utils/slugify'
 
