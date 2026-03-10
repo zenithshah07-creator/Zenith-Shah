@@ -4,8 +4,6 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { trackEvent } from "@/utils/analytics";
 import Image from "next/image";
-import Link from 'next/link';
-import { slugify } from "@/utils/slugify";
 
 interface ProjectProps {
     title: string;
@@ -44,11 +42,9 @@ const ProjectCard = ({ title, description, metrics, ahaMoment, technicalDifficul
 
             {/* Content */}
             <div className="relative p-6 z-20 flex-1 flex flex-col">
-                <Link href={`/projects/${slugify(title)}`} className="block">
-                    <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:text-sky-400 transition-colors">
-                        {title}
-                    </h3>
-                </Link>
+                <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:text-sky-400 transition-colors">
+                    {title}
+                </h3>
 
                 <p className="text-gray-400 mb-6 text-sm leading-relaxed">
                     {description}
@@ -115,12 +111,6 @@ const ProjectCard = ({ title, description, metrics, ahaMoment, technicalDifficul
                             Code
                         </a>
                     </div>
-                    <Link
-                        href={`/projects/${slugify(title)}`}
-                        className="w-full text-center px-4 py-2.5 text-xs font-bold bg-white/5 text-sky-400 rounded-lg border border-sky-500/20 hover:bg-sky-500/10 transition-all duration-300"
-                    >
-                        View Case Study
-                    </Link>
                 </div>
             </div>
         </div>
