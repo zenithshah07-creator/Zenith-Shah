@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     apple: "/Icon.png",
   },
   openGraph: {
-    title: "Zenith Shah (Jenish Shah) | Frontend Developer",
+    title: "Zenith Shah (Jenish Shah) | Full Stack Developer & MERN Stack Specialist",
     description: "Building high-performance, accessible web experiences. Check out my portfolio.",
     url: "https://zenith-shah.vercel.app",
     siteName: "Zenith Shah Portfolio",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zenith Shah (Jenish Shah) | Frontend Developer",
+    title: "Zenith Shah (Jenish Shah) | Fullstack Developer",
     description: "Building high-performance, accessible web experiences. Check out my portfolio.",
     creator: "@jenishshah", // Update if specific handle known, otherwise generic
     images: ["/og-image.png"],
@@ -87,14 +87,14 @@ export default function RootLayout({
               "name": "Zenith Shah",
               "alternateName": "Jenish Shah",
               "url": "https://zenith-shah.vercel.app",
-              "jobTitle": "Frontend Developer",
+              "jobTitle": "Fullstack Developer",
               "sameAs": [
                 "https://www.linkedin.com/in/jenish-shah-8a4863382/",
                 "https://github.com/zenithshah07-creator",
                 "https://x.com/DANAXYZx5?s=09"
               ],
-              "knowsAbout": ["React", "Next.js", "Frontend Development", "Web Accessibility", "SEO"],
-              "description": "Zenith Shah (legally Jenish Shah) is a Frontend Developer specializing in React and Next.js."
+              "knowsAbout": ["React", "Next.js", "Node.js", "MongoDB","Tailwind CSS","GenAI", "Fullstack Development", "Web Accessibility", "SEO"],
+              "description": "Zenith Shah (legally Jenish Shah) is a Fullstack Developer specializing in React and Next.js."
             }),
           }}
         />
