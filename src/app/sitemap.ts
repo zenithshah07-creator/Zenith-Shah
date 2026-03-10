@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/projects/${slugify(project.title)}`,
         lastModified: '2024-01-01',
         changeFrequency: 'monthly' as const,
-        priority: 0.7,
+        priority: 0.75,
     }))
 
     return [
