@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zenithshah07-creator.github.io/Zenith-Shah/sitemap.xml
+Sitemap: https://zenith-shah.vercel.app/sitemap.xml
